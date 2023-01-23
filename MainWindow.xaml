@@ -1,0 +1,19 @@
+﻿<Window x:Class="IncomeOutcomeLockAndSynchronised.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IncomeOutcomeLockAndSynchronised"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox Name ="IncomeBox" TextWrapping="Wrap" Text="TextBox" Margin="239,163,238,229"/>
+        <Button Content="Calculate" HorizontalAlignment="Left" Margin="275,217,0,0" VerticalAlignment="Top" Width="227" Click="Button_Click"/>
+        <TextBlock Name ="TimeBlock" HorizontalAlignment="Left" Margin="239,130,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="226"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="239,69,0,0" VerticalAlignment="Top" Width="142" Height="26" IsReadOnly="True" BorderBrush="White" Text="Select Type..." SelectedIndex="0">
+            <ComboBoxItem Content="Lock Mode"/>
+            <ComboBoxItem Content="TPL Mode"/>
+        </ComboBox>
+
+    </Grid>
+</Window>
